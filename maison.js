@@ -27,4 +27,19 @@ function maison() {
   context.fill();
 }
 
+function arbre() {
+  var id = document.getElementById("arbre");
+  var context = id.getContext("2d");
+  context.lineWidth = 10;
+  context.fillStyle =  "brown";
+  context.beginPath();
+  context.rect(115, 400, 70, -150);
+  context.fill();
+  context.fillStyle =  "green";
+  context.beginPath();
+  context.ellipse(150, 150, 90, 180, 0, 0, 2 * Math.PI);
+  context.fill();
+}
+
 maison();
+arbre();
